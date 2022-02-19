@@ -6,7 +6,8 @@ Training and sampling script for generating thumbnails for the [**[2021 Visual N
 
 Git Clone this repository recursively.
 
-```git clone --recursive
+```bash
+git clone --recursive
 ```
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the package.
@@ -16,9 +17,15 @@ pip install -r requirements.txt
 ```
 move into improved-diffusion directory and run the following command:
 ```bash
+cd improved-diffusion
 pip install -e .
 pip install mpi4py
 
+
+```
+Move back to the root directory and run the following command:
+```bash
+cd ..
 unzip sample.zip -d sample
 ```
 
@@ -34,7 +41,8 @@ Set environment variables:
 ```
 Run Training:
 ```bash
-!python improved-diffusion/scripts/image_train.py --data_dir ./sample/ $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
+python improved-diffusion/scripts/image_train.py --data_dir ./sample/ $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
+```
 
 
 
