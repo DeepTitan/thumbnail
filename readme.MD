@@ -44,7 +44,11 @@ Run Training:
 python improved-diffusion/scripts/image_train.py --data_dir ./sample/ $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
 ```
 
-
+## PreProcessing and PostProcessing
+```bash
+pip install pytorch-fid 
+```
+Check out the pre&post-process+FID.ipynb notebook
 
 ## Sampling
 Sample from the trained model:
